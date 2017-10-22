@@ -1,0 +1,67 @@
+CucumberWithMavenHybridFrameWork
+|
+    src
+    |
+    main
+        |
+        java
+            |
+            com 
+            |
+            hybridframework
+                            |
+                            datatables   // Code to read & write data from excel
+                            |
+                            miscellaneous // Custom Exceptions Class & Other custom methods
+                            |
+                            pagegenerator  // Generic class to auto instanctiate Page Objects Class
+                            |
+                            pageobjects    //  Page Objects goes here
+                            |
+                            pojos    // POJO Classess's goes here
+                            |
+                            propertiestable // code for accessing Properties files contents
+                            |
+                            testbase
+                                    |
+                                    enums   // custom enums
+                                    |
+                                    interfaces  // custom interfaces
+                            -Base.java // actual class holding usefull methods
+                            -BrowserFactory.java // Browser Handling functions (Initialisaiton,closing etc)
+        |
+        resources
+                |
+                config  // Place the Properties file here
+                |
+                DataSources // Place the excel sheets here
+                |
+                Drivers // Place the Drivers here
+                |
+                Reports
+                    |
+                    HtmlReports // Test results will be stored here
+                    |
+                    LogReports // Logs generated will be stored here
+                |
+                ScreenShots   //  Screenshots will be stored here
+        --log4j.properties   // Properties file for logging informations
+    |
+    test
+        |
+        java
+            |  
+            hooks // Hooks can be implemented here
+            |
+            stepDefinitions // all the step definition files goes here
+            |
+            TestRunner  // Actual Cucumber Test Runner file goes here
+
+        |
+        resources
+                |
+                Features    // place all the feature file in this folder
+        -Extentreportconfig.xml //custom xml file for configuring Reports
+
+-pom.xml   // Specify the dependencies and plugin in this file
+-tesng.xml  // make use of this file for execution

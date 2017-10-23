@@ -8,7 +8,7 @@ import com.hybridframework.testbase.BrowserFactory;
 
 public class Page extends BrowserFactory {
 
-	private static WebDriver driver = BrowserFactory.driver;
+	private static WebDriver driver ; //= BrowserFactory.getDefaultDriver();
 
 	/**
 	 * Specify all the Page Objects Classes here
@@ -23,14 +23,14 @@ public class Page extends BrowserFactory {
 	/**
 	 * Get the instances for Page object class here
 	 */
-	static {
-		homePage = getPageInstance(HomePage.class);
-		inputFormPage = getPageInstance(InputFormPage.class);
-		checkBoxPage = getPageInstance(CheckBoxPage.class);
-		radioButtonPage = getPageInstance(RadioButtonPage.class);
-		dropDownPage = getPageInstance(DropDownPage.class);
-		bootsrapAlertPage = getPageInstance(BoostrapAlertPage.class);
-	}
+//	static {
+//		homePage = getPageInstance(HomePage.class);
+//		inputFormPage = getPageInstance(InputFormPage.class);
+//		checkBoxPage = getPageInstance(CheckBoxPage.class);
+//		radioButtonPage = getPageInstance(RadioButtonPage.class);
+//		dropDownPage = getPageInstance(DropDownPage.class);
+//		bootsrapAlertPage = getPageInstance(BoostrapAlertPage.class);
+//	}
 
 	/**
 	 * Returns the Page Object instance After initializing the Web Elements
@@ -42,6 +42,17 @@ public class Page extends BrowserFactory {
 	private static <T> T getPageInstance(Class<T> clazz) {
 		T instance = PageFactory.initElements(driver, clazz);
 		return instance;
+	}
+	
+	
+	public static void  initialiseAllInstance() {
+		 driver = BrowserFactory.getDefaultDriver();
+		homePage = getPageInstance(HomePage.class);
+		inputFormPage = getPageInstance(InputFormPage.class);
+		checkBoxPage = getPageInstance(CheckBoxPage.class);
+		radioButtonPage = getPageInstance(RadioButtonPage.class);
+		dropDownPage = getPageInstance(DropDownPage.class);
+		bootsrapAlertPage = getPageInstance(BoostrapAlertPage.class);
 	}
 
 }

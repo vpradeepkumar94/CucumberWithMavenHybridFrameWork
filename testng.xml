@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suitessssssssss">
-  <test name="Test">
-    <classes>
-      <class name="TestRunner.RunCucumberTest"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+<suite name="Parallel Execution" parallel="tests" thread-count="2">
+	<test name="chrome">
+	<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="TestRunner.RunCucumberTest" />
+		</classes>
+	</test> 
+	<test name="firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="TestRunner.RunCucumberTest" />
+		</classes>
+	</test> 
+</suite> 

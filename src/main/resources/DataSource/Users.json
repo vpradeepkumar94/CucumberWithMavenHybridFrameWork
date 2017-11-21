@@ -1,0 +1,29 @@
+{
+  "USERS": {
+    "User1": {
+      "name": "Manmohari",
+      "age": 23
+    },
+    "User2": {
+      "name": "Pradeep",
+      "age": 23
+    },
+    "User3": {
+      "name": "KL Rahul",
+      "age": 23
+    },
+    "User4": {
+      "name": "anb",
+      "age": 23
+    },
+    "User5": {
+      "name": "anb",
+      "age": 23
+    },
+    "User6": {
+      "name": "ManiMarai",
+      "age": 23
+    }
+   
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "STUDENTS": {
+    "Student1": {
+      "name": "KL Rahul",
+      "age": 23,
+      "subjects": [
+        "sub1",
+        "sub1.1"
+      ]
+    },
+    "Student2": {
+      "name": "KL Rahul",
+      "age": 23,
+      "subjects": [
+        "sub2",
+        "sub2.1"
+      ]
+    },
+    "Student3": {
+      "name": "Kumar",
+      "age": 21,
+      "subjects": [
+        "sub3",
+        "sub3.1"
+      ]
+    },
+    "Student4": {
+      "name": "Kumar",
+      "age": 21,
+      "subjects": [
+        "sub4",
+        "sub4.1"
+      ]
+    },
+    "Student6": {
+      "name": "Menaca",
+      "age": 22,
+      "subjects": [
+        "Subs5",
+        "Sub5.1"
+      ]
+    }
+  }
+}
